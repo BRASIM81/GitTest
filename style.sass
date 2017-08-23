@@ -1,0 +1,56 @@
+*
+	padding: 0
+	margin: 0
+
+@keyframes flipInY 
+	from 
+		transform: perspective(400px) rotate3d(0, 1, 0, 90deg)
+		animation-timing-function: ease-in
+		opacity: 0
+	40% 
+		transform: perspective(400px) rotate3d(0, 1, 0, -20deg)
+		animation-timing-function: ease-in
+	60% 
+		transform: perspective(400px) rotate3d(0, 1, 0, 10deg)
+		opacity: 1
+	80% 
+		transform: perspective(400px) rotate3d(0, 1, 0, -5deg)
+	to
+		transform: perspective(400px)
+
+
+h1
+	width: 500px
+	margin: 10px auto
+	text-align: center
+	backface-visibility: visible !important
+	animation-name: flipInY
+	animation-duration: 3s
+
+.img-holder 
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	align-items: center
+
+	.image
+		width: calc(25% - 10px)
+		margin: 5px
+		padding: 5px
+		box-sizing: border-box
+		opacity: 0
+		transition: opacity 300ms ease-in-out
+
+		&.show
+			opacity: 1
+			animation-name: flipInY
+			animation-duration: 1.100s
+			backface-visibility: visible
+
+	.image:nth-child(odd)
+		background: 
+			color: rgb(200,67,200)
+
+	.image:nth-child(even)
+		background: 
+			color: red
