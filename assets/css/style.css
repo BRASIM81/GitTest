@@ -1,0 +1,36 @@
+.parallax-container {
+  height: 400px; }
+  .parallax-container p {
+    color: #fff;
+    padding: 1rem 2rem;
+    background: rgba(158, 158, 158, 0.6);
+    border-radius: 5px; }
+
+#hero-main .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  #hero-main .container .ic1, #hero-main .container .ic2, #hero-main .container .ic3 {
+    margin: 3rem auto;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: #444; }
+  #hero-main .container .ic2 {
+    height: 80px;
+    width: 80px; }
+  #hero-main .container .ic3 {
+    height: 160px;
+    width: 160px;
+    background-image: url(../img/head-shot.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+#card-icon .card-content .fa {
+  padding: 0.5rem 1rem;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-bottom: 0.5rem; }
+#card-icon .card-content .card-title {
+  font-weight: 500; }
